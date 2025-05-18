@@ -22,6 +22,14 @@
     "./styles.css": "./styles.css",
     "./package.json": "./package.json"
   },
+  "keywords": [
+    "starlight",
+    "astro",
+    "progress",
+    "scroll",
+    "indicator",
+    "bar"
+  ],
   "devDependencies": {
     "@astrojs/starlight": "^0.34.3",
     "astro": "^5.7.13"
