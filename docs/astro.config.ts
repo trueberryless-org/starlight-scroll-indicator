@@ -1,4 +1,5 @@
 import starlight from "@astrojs/starlight";
+import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 import { defineConfig } from "astro/config";
 import starlightScrollIndicator from "starlight-scroll-indicator";
 
@@ -9,7 +10,12 @@ export default defineConfig({
         baseUrl:
           "https://github.com/trueberryless-org/starlight-scroll-indicator/edit/main/docs/",
       },
-      plugins: [starlightScrollIndicator()],
+      plugins: [
+        starlightScrollIndicator(),
+        starlightPluginsDocsComponents({
+          pluginName: "starlight-scroll-indicator",
+        }),
+      ],
       sidebar: [
         {
           label: "Start Here",
