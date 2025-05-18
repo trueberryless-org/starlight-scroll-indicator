@@ -1,19 +1,31 @@
 {
   "name": "starlight-scroll-indicator-monorepo",
   "version": "0.0.1",
-  "license": "MIT",
-  "description": "Add an indicator to the Starlight header which shows the scrolling progress",
-  "author": "trueberryless-org",
-  "type": "module",
-  "engines": {
-    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-  },
-  "packageManager": "pnpm@9.6.0",
   "private": true,
+  "description": "Add an indicator to the Starlight header which shows the scrolling progress",
   "homepage": "https://github.com/trueberryless-org/starlight-scroll-indicator",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/starlight-scroll-indicator/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trueberryless-org/starlight-scroll-indicator.git"
   },
-  "bugs": "https://github.com/trueberryless-org/starlight-scroll-indicator/issues"
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "type": "module",
+  "scripts": {
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11",
+    "@trivago/prettier-plugin-sort-imports": "5.2.2",
+    "prettier": "3.5.3",
+    "prettier-plugin-astro": "0.14.1"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  }
 }
