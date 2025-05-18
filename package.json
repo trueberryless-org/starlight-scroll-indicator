@@ -1,0 +1,19 @@
+{
+  "name": "starlight-scroll-indicator-monorepo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Add an indicator to the Starlight header which shows the scrolling progress",
+  "author": "trueberryless-org",
+  "type": "module",
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "private": true,
+  "homepage": "https://github.com/trueberryless-org/starlight-scroll-indicator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/starlight-scroll-indicator.git"
+  },
+  "bugs": "https://github.com/trueberryless-org/starlight-scroll-indicator/issues"
+}

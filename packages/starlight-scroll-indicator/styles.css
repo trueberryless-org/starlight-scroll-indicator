@@ -1,0 +1,7 @@
+@layer starlight, scroll-indicator;
+
+@layer scroll-indicator {
+  #starlight__on-this-page--mobile {
+    margin-top: 0.25rem;
+  }
+}
