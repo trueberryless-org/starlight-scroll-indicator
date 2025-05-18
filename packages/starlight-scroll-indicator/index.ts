@@ -1,15 +1,12 @@
-import type { StarlightPlugin } from '@astrojs/starlight/types'
+import type { StarlightPlugin } from "@astrojs/starlight/types";
+
 import { overrideStarlightComponent } from "./libs/starlight";
 
 export default function starlightScrollIndicator(): StarlightPlugin {
   return {
-    name: 'starlight-scroll-indicator',
+    name: "starlight-scroll-indicator",
     hooks: {
-      "config:setup"({
-        config: starlightConfig,
-        logger,
-        updateConfig,
-      }) {
+      "config:setup"({ config: starlightConfig, logger, updateConfig }) {
         updateConfig({
           customCss: [
             ...(starlightConfig.customCss ?? []),
@@ -27,5 +24,5 @@ export default function starlightScrollIndicator(): StarlightPlugin {
         });
       },
     },
-  }
+  };
 }
